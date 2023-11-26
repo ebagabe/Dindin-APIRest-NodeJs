@@ -1,0 +1,12 @@
+const { Pool } = require('pg')
+
+// Modifique para seu banco de dados local
+const pool = new Pool({
+    host: 'localhost',
+    port: 5000,
+    user: 'postgres',
+    password: '',
+    database: 'dindin',
+})
+
+module.exports = pool
